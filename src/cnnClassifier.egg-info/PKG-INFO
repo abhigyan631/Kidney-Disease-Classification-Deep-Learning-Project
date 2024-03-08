@@ -1,3 +1,12 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/abhigyan631/Kidney-Disease-Classification-Deep-Learning-Project
+Author: abhigyan631
+Author-email: abhigyan631@gmail.com
+Project-URL: Bug Tracker, https://github.com/abhigyan631/Kidney-Disease-Classification-Deep-Learning-Project/issues
+
 # Kidney-Disease-Classification-Deep-Learning-Project-MLflow-DVC
 This is a Deep Learning project to classify kidney tumors
 
