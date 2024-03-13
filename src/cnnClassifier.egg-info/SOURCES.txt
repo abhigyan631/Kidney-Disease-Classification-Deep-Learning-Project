@@ -1,23 +1,532 @@
 README.md
 dvc.yaml
+main.py
 params.yaml
 requirements.txt
 setup.py
 template.py
 .github/workflows/.gitkeep
+.ipynb_checkpoints/README-checkpoint.md
+.ipynb_checkpoints/main-checkpoint.py
+.ipynb_checkpoints/params-checkpoint.yaml
+.ipynb_checkpoints/requirements-checkpoint.txt
+.ipynb_checkpoints/setup-checkpoint.py
 .ipynb_checkpoints/template-checkpoint.py
+artifacts/data_ingestion/data.zip
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (637).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (638).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (639).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (64).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (640).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (641).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (642).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (643).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (644).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (645).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (646).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (647).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (65).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (66).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (660).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (661).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (662).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (663).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (664).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (665).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (666).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (667).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (668).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (669).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (67).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (670).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (671).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (672).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (673).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (674).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (675).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (676).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (677).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (678).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (679).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (68).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (680).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (681).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (682).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (683).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (684).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (685).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (686).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (687).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (688).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (689).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (69).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (690).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (691).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (692).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (693).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (694).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (695).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (696).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (697).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (698).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (699).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (7).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (70).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (700).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (701).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (702).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (703).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (704).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (705).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (706).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (707).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (708).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (709).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (71).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (710).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (711).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (712).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (713).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (714).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (715).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (716).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (717).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (718).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (719).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (72).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (720).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (721).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (722).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (723).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (724).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (725).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (726).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (727).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (728).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (729).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (73).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (730).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (731).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (732).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (733).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (734).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (735).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (736).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (737).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (738).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (739).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (74).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (740).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (741).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (742).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (743).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (744).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (745).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (746).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (747).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (748).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (749).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (75).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (750).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (751).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (752).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (753).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (754).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (755).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (756).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (757).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (758).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (759).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (76).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (760).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (761).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (762).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (763).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (764).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (765).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (766).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (767).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (768).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (769).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (77).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (770).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (771).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (772).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (773).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (774).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (775).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (776).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (777).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (778).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (779).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (78).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (780).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (781).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (782).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (783).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (784).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (785).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (786).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (787).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (788).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (789).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (79).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (790).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (791).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (792).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (793).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (794).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (795).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (796).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (797).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (798).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (799).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (8).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (80).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (800).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (801).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (802).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (803).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (804).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (805).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (806).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (807).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (808).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (809).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (810).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (811).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (812).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (813).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (814).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (815).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (816).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (817).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (818).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (819).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (82).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (820).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (821).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (822).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (823).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (933).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (934).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (94).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (95).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (96).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (963).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (964).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (965).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (966).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (967).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (968).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (969).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (97).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (970).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (971).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (972).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (973).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (974).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (975).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (976).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (977).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (978).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (979).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (98).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (980).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (981).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (982).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (983).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (984).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (985).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (986).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (987).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (988).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (989).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (99).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (990).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (991).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (992).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (993).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (994).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (995).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (996).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (997).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (998).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Normal/Normal- (999).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (701).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (702).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (703).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (704).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (705).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (706).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (707).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (708).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (709).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (71).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (710).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (711).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (712).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (713).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (714).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (715).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (716).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (717).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (718).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (719).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (72).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (720).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (721).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (722).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (723).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (724).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (725).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (726).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (727).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (728).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (729).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (73).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (730).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (731).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (732).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (733).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (734).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (735).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (736).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (737).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (738).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (739).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (74).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (740).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (741).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (742).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (743).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (744).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (745).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (746).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (747).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (748).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (749).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (75).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (750).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (751).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (752).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (753).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (754).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (755).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (756).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (757).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (758).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (759).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (76).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (760).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (761).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (762).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (763).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (764).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (765).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (766).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (767).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (768).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (769).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (77).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (770).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (771).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (772).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (773).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (774).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (775).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (776).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (777).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (778).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (779).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (78).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (780).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (781).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (782).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (783).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (784).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (785).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (786).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (787).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (788).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (789).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (79).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (790).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (791).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (792).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (793).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (794).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (795).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (796).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (797).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (798).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (799).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (8).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (80).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (800).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (801).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (802).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (803).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (804).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (805).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (806).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (807).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (808).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (809).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (81).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (810).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (811).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (812).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (813).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (814).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (815).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (816).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (817).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (818).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (819).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (82).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (820).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (821).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (822).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (823).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (824).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (825).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (826).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (827).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (828).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (829).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (83).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (830).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (831).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (832).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (833).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (834).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (835).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (836).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (837).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (838).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (839).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (84).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (840).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (841).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (842).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (843).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (844).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (845).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (846).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (847).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (848).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (849).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (85).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (850).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (851).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (852).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (853).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (854).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (855).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (856).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (872).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (873).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (874).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (875).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (876).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (877).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (878).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (879).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (95).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (950).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (951).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (952).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (953).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (954).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (955).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (956).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (957).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (958).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (959).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (96).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (960).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (961).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (962).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (97).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (973).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (974).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (975).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (976).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (977).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (978).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (979).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (98).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (980).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (981).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (982).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (983).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (984).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (985).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (986).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (987).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (988).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (989).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (99).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (990).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (991).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (992).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (993).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (994).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (995).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (996).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (997).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (998).jpg
+artifacts/data_ingestion/kidney-ct-scan-image/Tumor/Tumor- (999).jpg
 config/config.yaml
+config/.ipynb_checkpoints/config-checkpoint.yaml
+logs/running_logs.log
+logs/.ipynb_checkpoints/running_logs-checkpoint.log
+research/data_ingestion.ipynb
 research/trials.ipynb
+research/.ipynb_checkpoints/data_ingestion-checkpoint.ipynb
+research/.ipynb_checkpoints/trials-checkpoint.ipynb
+research_1/01_data_ingestion.ipynb
+research_1/02_prepare_base_model.ipynb
+research_1/03_model_training.ipynb
+research_1/04_model_evaluation_with_mlflow.ipynb
+research_1/trials.ipynb
+research_1/.ipynb_checkpoints/01_data_ingestion-checkpoint.ipynb
+research_1/.ipynb_checkpoints/trials-checkpoint.ipynb
 src/cnnClassifier/__init__.py
 src/cnnClassifier.egg-info/PKG-INFO
 src/cnnClassifier.egg-info/SOURCES.txt
 src/cnnClassifier.egg-info/dependency_links.txt
 src/cnnClassifier.egg-info/top_level.txt
+src/cnnClassifier/.ipynb_checkpoints/__init__-checkpoint.py
+src/cnnClassifier/__pycache__/__init__.cpython-310.pyc
 src/cnnClassifier/components/__init__.py
+src/cnnClassifier/components/data_ingestion.py
+src/cnnClassifier/components/.ipynb_checkpoints/data_ingestion-checkpoint.py
+src/cnnClassifier/components/__pycache__/__init__.cpython-310.pyc
+src/cnnClassifier/components/__pycache__/data_ingestion.cpython-310.pyc
 src/cnnClassifier/config/__init__.py
 src/cnnClassifier/config/configuration.py
+src/cnnClassifier/config/.ipynb_checkpoints/configuration-checkpoint.py
+src/cnnClassifier/config/__pycache__/__init__.cpython-310.pyc
+src/cnnClassifier/config/__pycache__/configuration.cpython-310.pyc
 src/cnnClassifier/constants/__init__.py
+src/cnnClassifier/constants/.ipynb_checkpoints/__init__-checkpoint.py
+src/cnnClassifier/constants/__pycache__/__init__.cpython-310.pyc
 src/cnnClassifier/entity/__init__.py
+src/cnnClassifier/entity/config_entity.py
+src/cnnClassifier/entity/.ipynb_checkpoints/config_entity-checkpoint.py
+src/cnnClassifier/entity/__pycache__/__init__.cpython-310.pyc
+src/cnnClassifier/entity/__pycache__/config_entity.cpython-310.pyc
 src/cnnClassifier/pipeline/__init__.py
+src/cnnClassifier/pipeline/stage_01_data_ingestion.py
+src/cnnClassifier/pipeline/.ipynb_checkpoints/stage_01_data_ingestion-checkpoint.py
+src/cnnClassifier/pipeline/__pycache__/__init__.cpython-310.pyc
+src/cnnClassifier/pipeline/__pycache__/stage_01_data_ingestion.cpython-310.pyc
 src/cnnClassifier/utils/__init__.py
+src/cnnClassifier/utils/common.py
+src/cnnClassifier/utils/.ipynb_checkpoints/__init__-checkpoint.py
+src/cnnClassifier/utils/.ipynb_checkpoints/common-checkpoint.py
+src/cnnClassifier/utils/__pycache__/__init__.cpython-310.pyc
+src/cnnClassifier/utils/__pycache__/common.cpython-310.pyc
 templates/index.html
